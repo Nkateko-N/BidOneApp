@@ -1,0 +1,18 @@
+
+<h2>BidOne Test</h2>
+<!DOCTYPE html>
+<html>
+    <head>
+        </head>
+        <body>
+            <form #form="ngForm" (ngSubmit)="addEmployee()">
+                Name:<input type="text" class="form-control" id="name" [(ngModel)]="addEmployeeRequest.name">
+                Surname:<input type="text" class="form-control" id="surname" [(ngModel)]="addEmployeeRequest.surname">
+                <button type="submit" class="btn btn-primary">Sumit</button>
+            </form>
+        </body>
+    
+</html>
+
+
+<router-outlet></router-outlet>
